@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    sigsid:
+        ports:
+            - '8111:80'
+        volumes:
+            - ./html:/var/www/html
+            - ./phpini-override.ini:/etc/php/7.4/apache2/conf.d/99-phpini-override.ini
+             
+#        restart: always
+#        logging:
+#            options:
+#                max-size: 1g
+        image: sigsid:latest
+#        command:  /usr/local/bin/apache2-foreground"

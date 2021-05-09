@@ -17,7 +17,11 @@ RUN apt-get install -y curl apache2 \
           php-pgsql \
           php-soap \
           php-xml \
-          libyaz4-dev 
+          libyaz4-dev \
+          libcurl4-gnutls-dev \
+          pkg-config
+
+
 
 #RUN wget https://github.com/vufind-org/vufind/releases/download/v6.1.1/vufind_6.1.1.deb
 RUN service apache2 start
@@ -29,14 +33,14 @@ RUN service apache2 start
 #RUN chown -R www-data:www-data $APP_HOME
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y  apt-utils sudo || true
 ENV TZ=America/Argentina/Mendoza
-#RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-#EXPOSE 8080
-#ADD sample.mrc /tmp/sample.mrc
-#RUN . /etc/profile.d/vufind.sh \
-#    && sudo -u solr /usr/local/vufind/solr.sh start \
-#    && /usr/local/vufind/import-marc.sh /tmp/sample.mrc
-RUN yes "" |pecl install yaz
+
+
+RUN yes "" |pecl install yaz    
+RUN ln -s /usr/include/x86_64-linux-gnu/curl/ /usr/local/include/curl
+RUN apt-get install -y libcurl4-gnutls-dev
+
+RUN yes "" |pecl install solr
 
 # configure apache
 EXPOSE 80

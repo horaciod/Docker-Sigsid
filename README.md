@@ -7,5 +7,6 @@ Con esta imagen se puede correr el sistema de bibliotecas que he desarrollado pa
 - APACHE2 
 - UBUNTU FOCAL (20.04) 
 - Con extensiones del repositorio de ubuntu y una especial del repositorio yaz
-
-
+- Página de check de extensiones instaladas en el directorio html. 
+- Agregado el soporte para SOLR-client
+ 

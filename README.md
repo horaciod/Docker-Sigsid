@@ -10,3 +10,6 @@ Con esta imagen se puede correr el sistema de bibliotecas que he desarrollado pa
 - Página de check de extensiones instaladas en el directorio html. 
 - Agregado el soporte para SOLR-client
  
+construir con
+docker build -t sigsidv2 .
+

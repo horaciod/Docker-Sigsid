@@ -45,6 +45,8 @@ RUN yes "" |pecl install solr
 # configure apache
 EXPOSE 80
 EXPOSE 443
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 COPY apache2-foreground /usr/bin/
 RUN chmod +x /usr/bin/apache2-foreground 
+
 CMD ["apache2-foreground"]

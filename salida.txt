@@ -1,0 +1,26 @@
+    1  pecl install solr 
+    2  sudo apt-get install libcurl4-gnutls-dev 
+    3  pecl install solr 
+    4  sudo apt-get install libxml2 libxml2-dev
+    5  apt install php-curl
+    6  apt install libpcre3-dev
+    7  echo " " |pecl install solr 
+    8  apt install libcurl
+    9  apt install libcurl-dev
+   10  apt install libcurl4-gnutls-dev
+   11  apt install libcurl4-openssl-dev
+   12  echo " " |pecl install solr 
+   13  cd /usr/local/include/
+   14  ls
+   15  ln -s /usr/include/x86_64-linux-gnu/curl/ curl 
+   16  apt-get install libcurl4-gnutls-dev
+   17  echo " " |pecl install solr 
+   18  apt install libxml2-dev
+   19  apt install pkg-config
+   20  echo " " |pecl install solr 
+   21  pecl channel-update pecl.php.net
+   22  ls /usr/lib/php/7.4/sapi/apache2 
+   23  ls /usr/local/lib/
+   24  ls /usr/include/
+   25  clear
+   26  history >/tmp/salida.txt

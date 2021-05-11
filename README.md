@@ -14,4 +14,6 @@ construir con
 docker build -t sigsidv2 .
 
 Desarrollado por el [sid](https://sid.uncu.edu.ar)
+copyleft 2021
+
 

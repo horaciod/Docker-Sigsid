@@ -13,3 +13,5 @@ Con esta imagen se puede correr el sistema de bibliotecas que he desarrollado pa
 construir con
 docker build -t sigsidv2 .
 
+Desarrollado por el [sid](https://sid.uncu.edu.ar)
+

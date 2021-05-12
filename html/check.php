@@ -22,7 +22,7 @@ foreach ($todas as $ext) {
         $todas1[$ext] = $ext . ' instalada correctamente version: ' . $version;
   
 }
-require '../include/bootstrap/bootstrap.php';
+require './bootstrap.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

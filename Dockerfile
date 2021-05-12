@@ -17,6 +17,7 @@ RUN apt-get install -y curl apache2 \
           php-pgsql \
           php-soap \
           php-xml \
+          php-zip \
           libyaz4-dev \
           libcurl4-gnutls-dev \
           pkg-config

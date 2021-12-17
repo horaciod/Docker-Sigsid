@@ -2,7 +2,7 @@
 
 /**
  * funciones de componentes bootstrap version 3.3 getbootstrap.com
- *
+ * parte de draphp
  * @author horaciod
  */
 class bootstrap

@@ -7,9 +7,10 @@ services:
             - ./html:/var/www/html
             - ./phpini-override.ini:/etc/php/7.4/apache2/conf.d/99-phpini-override.ini
              
-#        restart: always
+        restart: always
 #        logging:
 #            options:
 #                max-size: 1g
-        image: sigsid:latest
-#        command:  /usr/local/bin/apache2-foreground"
+        image: sigsid3:latest
+        command:  /usr/bin/apache2-sshd-foreground
+
